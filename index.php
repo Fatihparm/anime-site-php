@@ -29,8 +29,10 @@ session_start();
                 <a href="register.php"><button type="submit">Register</button></a>
             <?php endif; ?>
         </nav>
+        <div class="github-container">
+            <a href="https://github.com/Fatihparm/anime-site-php"><img src="img/github.png" alt="GitHub"></a>
+        </div>
     </header>
-
 
 </body>
 </html>

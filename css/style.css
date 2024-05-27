@@ -258,3 +258,8 @@ nav a button:hover {
 .container-anime form button:hover {
     background-color: #0056b3;
 }
+
+.github-container {
+    margin-top: 20px;
+    text-align: center;
+}
