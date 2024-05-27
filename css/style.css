@@ -1,0 +1,260 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.page-head {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff83;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e06924;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cpntainer button:hover {
+    background-color: #b1b1b1;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+}
+
+.form-group button,
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover,
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav a button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav a button:hover {
+    text-decoration: underline;
+}
+
+.anime-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.anime-item {
+    width: 200px; 
+    margin: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    text-align: center;
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.anime-item h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.profile-container, .password-container, .delete-container , .reviews-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #d1d1d1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container form, .password-container form, .delete-container form, .reviews-container form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container-anime {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #e4e3e3e7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-anime h1 {
+    text-align: center;
+}
+
+.container-anime span {
+    background-color: #333;
+    margin-right: 20px;
+}
+
+.container-anime img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-anime p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+
+.container-anime h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-anime ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container-anime ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.container-anime ul li strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.container-anime ul li em {
+    font-size: 12px;
+    color: #555;
+}
+
+
+.container-anime form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-anime form label {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.container-anime form input{
+    width : 10%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+.container-anime form textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.container-anime form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-anime form button:hover {
+    background-color: #0056b3;
+}
