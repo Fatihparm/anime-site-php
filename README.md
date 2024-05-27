@@ -32,35 +32,10 @@ To set up this project on your local machine, follow these steps:
 2. **Set up the database:**
 
     - Create a database named `anime_site`.
-    - Import the provided `database.sql` file into your database. This file contains the necessary tables and sample data.
+    - Import the provided `anime_site.sql` file into your database. This file contains the necessary tables and sample data.
 
     ```bash
-    mysql -u your_username -p anime_site < database.sql
-    ```
-
-3. **Configure the application:**
-
-    - Open `includes/db.php` and update the database configuration with your database credentials.
-
-    ```php
-    <?php
-    $host = '127.0.0.1';
-    $db = 'anime_site';
-    $user = 'your_username';
-    $pass = 'your_password';
-    $charset = 'utf8mb4';
-    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-    $options = [
-        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_EMULATE_PREPARES   => false,
-    ];
-    try {
-        $pdo = new PDO($dsn, $user, $pass, $options);
-    } catch (\PDOException $e) {
-        throw new \PDOException($e->getMessage(), (int)$e->getCode());
-    }
-    ?>
+    mysql -u your_username -p anime_site < anime_site.sql
     ```
 
 4. **Run the application:**
@@ -114,6 +89,3 @@ To set up this project on your local machine, follow these steps:
 3. **Delete Account:**
 
     You can delete your account from the profile page.
-
-## Folder Structure
-
