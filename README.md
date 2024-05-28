@@ -89,3 +89,42 @@ To set up this project on your local machine, follow these steps:
 3. **Delete Account:**
 
     You can delete your account from the profile page.
+
+## Scraping Anime Data (OPTIONAL)
+
+The `scrape.py` script is used to scrape anime data from a source and populate the database. This script is written in Python and requires BeautifulSoup and requests libraries.
+This script should only be used **once** if animes table somehow empty.
+Please **don't run** this script if animes table is full. It will duplicate entire database and we don't want that.
+
+### Running the Scraping Script
+
+1. **Install the required Python libraries:**
+
+    ```bash
+    pip install beautifulsoup4 requests
+    ```
+2. **Add .env file:**
+
+    ```bash
+    DB_HOST=127.0.0.1
+    DB_USER=root
+    DB_PASSWORD=your_password
+    DB_NAME=your_db_name
+    ```
+
+3. **Run the script:**
+
+    ```bash
+    python scrape.py
+    ```
+
+    The script will scrape anime data from the specified source and insert it into the `animes` table in the database.
+
+### scrape.py Overview
+
+The `scrape.py` script performs the following tasks:
+
+- Connects to a specified anime data source.
+- Scrapes relevant information such as title, description, image URL, score, rank, popularity, and season.
+- Inserts the scraped data into the `animes` table in the database.
+
