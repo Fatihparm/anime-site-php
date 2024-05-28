@@ -36,7 +36,8 @@ To set up this project on your local machine, follow these steps:
 
     - Create a database named `anime_site`.
     - Import the provided `anime_site.sql` file into your database. This file contains the necessary tables and sample data.
-
+    - You can manually connect it by phpmyadmin or you can run the code below.
+    
     ```bash
     mysql -u your_username -p anime_site < anime_site.sql
     ```
