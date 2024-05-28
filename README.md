@@ -5,6 +5,9 @@ This is a simple anime review site built with PHP and MySQL. Users can register,
 ## Live server link
 - http://anime-site-php.infinityfreeapp.com/index.php
 
+## Demo video
+- https://www.youtube.com/watch?v=Low4fKa5aa4
+
 ## Features
 
 - User registration and login
